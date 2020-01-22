@@ -42,7 +42,7 @@ function onButtonClick() {
 
   bluetoothDevice = null;
   console.log('Requesting any Bluetooth Device...');
-  navigator.bluetooth
+  bluetooth
     .requestDevice({
       // filters: [...] <- Prefer filters to save energy & show relevant devices.
       filters: [
