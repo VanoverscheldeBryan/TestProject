@@ -45,11 +45,12 @@ function onButtonClick() {
   navigator.bluetooth
     .requestDevice({
       // filters: [...] <- Prefer filters to save energy & show relevant devices.
-      filters: [
-        {
-          services: ['heart_rate']
-        }
-      ]
+      // filters: [
+      //   {
+      //     services: ['heart_rate']
+      //   }
+      // ]
+      acceptAllDevices: true
     })
     .then(
       device => {
